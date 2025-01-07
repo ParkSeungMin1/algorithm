@@ -14,13 +14,7 @@ public class Main {
                 max = i;
             }
         }
-        for(int i=b;;i++){
-            if(i%a==0 && i%b==0) {
-                sb.append(max).append("\n").append(i);
-                break;
-            }
-        }
-
+        sb.append(max).append("\n").append(a/max * b);
         System.out.println(sb);
     }
 }
