@@ -17,10 +17,10 @@ public class Main {
             if(i==0) ret = arr.get(0);
             ret = gcd(ret,arr.get(i));
         }
-        for(int i=2;i<=ret;i++){
+        for(int i=2;i<=ret/2;i++){
             if(ret%i==0) sb.append(i).append(" ");
         }
-        
+        sb.append(ret);
         System.out.print(sb);
     }
 
