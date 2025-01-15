@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-        Deque<Integer> q = new LinkedList<>();
+        Deque<Integer> q = new ArrayDeque<>();
         int n = Integer.parseInt(br.readLine());
 
         for(int i=1;i<=n;i++){
