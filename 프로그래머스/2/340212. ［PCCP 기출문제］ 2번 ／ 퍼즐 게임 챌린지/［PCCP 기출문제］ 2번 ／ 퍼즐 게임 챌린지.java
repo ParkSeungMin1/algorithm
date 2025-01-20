@@ -21,8 +21,8 @@ class Solution {
         return answer;
     }
     public static boolean puzzle(int[] diffs, int[] times, long limit,int level){
-        long totalTime=times[0];
-        for(int i=1;i<diffs.length;i++){
+        long totalTime=0;
+        for(int i=0;i<diffs.length;i++){
             if(diffs[i]<=level) totalTime+=times[i];
             else{
                 totalTime += (times[i-1]+times[i])*(diffs[i]-level) + times[i];
